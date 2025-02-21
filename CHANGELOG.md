@@ -424,8 +424,8 @@ Build note: Linux builds can now be built without CGO.
 supvervisord collector reports `start_time_seconds` rather than `uptime` #952
 
 The wifi collector is disabled by default due to suspected caching issues and goroutine leaks.
-* https://github.com/prometheus/node_exporter/issues/870
-* https://github.com/prometheus/node_exporter/issues/1008
+* https://github.com/xuxife/node_exporter/issues/870
+* https://github.com/xuxife/node_exporter/issues/1008
 
 Darwin meminfo metrics have been renamed to match Prometheus conventions. #1060
 

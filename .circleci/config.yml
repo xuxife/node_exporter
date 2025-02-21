@@ -49,7 +49,7 @@ jobs:
       - run: docker run --privileged linuxkit/binfmt:af88a591f9cc896a52ce596b9cf7ca26a061ef97
       - run: promu crossbuild -v --parallelism $CIRCLE_NODE_TOTAL --parallelism-thread $CIRCLE_NODE_INDEX
       - run: promu --config .promu-cgo.yml crossbuild -v --parallelism $CIRCLE_NODE_TOTAL --parallelism-thread $CIRCLE_NODE_INDEX
-      # sign the darwin build so it doesn't get SIGKILLed on start, see: https://github.com/prometheus/node_exporter/issues/2539
+      # sign the darwin build so it doesn't get SIGKILLed on start, see: https://github.com/xuxife/node_exporter/issues/2539
       - run:
           command: |
             if [[ -f "$(pwd)/.build/darwin-arm64/node_exporter" ]]; then
@@ -71,7 +71,7 @@ jobs:
       image: ubuntu-2204:current
     environment:
       DOCKER_TEST_IMAGE_NAME: quay.io/prometheus/golang-builder:1.23-base
-      REPO_PATH: github.com/prometheus/node_exporter
+      REPO_PATH: github.com/xuxife/node_exporter
     steps:
       - prometheus/setup_environment
       - attach_workspace:

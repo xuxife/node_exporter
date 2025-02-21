@@ -1,4 +1,4 @@
-module github.com/prometheus/node_exporter
+module github.com/xuxife/node_exporter
 
 go 1.22.0
 

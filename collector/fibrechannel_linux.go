@@ -22,7 +22,7 @@ import (
 	"os"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/node_exporter/collector/utils"
+	"github.com/xuxife/node_exporter/collector/utils"
 	"github.com/prometheus/procfs/sysfs"
 )
 

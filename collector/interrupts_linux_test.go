@@ -51,7 +51,7 @@ func TestInterrupts(t *testing.T) {
 
 }
 
-// https://github.com/prometheus/node_exporter/issues/2557
+// https://github.com/xuxife/node_exporter/issues/2557
 // On aarch64 the interrupts file can have zero spaces between the label of
 // the row and the first value if the value is large
 func TestInterruptsArm(t *testing.T) {

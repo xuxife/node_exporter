@@ -3,7 +3,7 @@ go:
     # .promu-cgo.yml should also be updated.
     version: 1.23
 repository:
-    path: github.com/prometheus/node_exporter
+    path: github.com/xuxife/node_exporter
 build:
     binaries:
         - name: node_exporter

@@ -36,7 +36,7 @@ import (
 const (
 	// minSystemdVersionSystemState is the minimum SystemD version for availability of
 	// the 'SystemState' manager property and the timer property 'LastTriggerUSec'
-	// https://github.com/prometheus/node_exporter/issues/291
+	// https://github.com/xuxife/node_exporter/issues/291
 	minSystemdVersionSystemState = 212
 )
 
